@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lab 5</title>
+</head>
+<body>
+  <h1>Volunteer Form</h1>
+  <form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+    <fieldset>
+      <legend>My Info</legend>
+      <div><label>First Name: <input type="text" name="first_name_field" size="100"></label></div>
+      <div><label>Last Name: <input type="text" name="last_name_field" size="100"></label></div>
+      <div><label>Phone: <input type="text" name="phone_field" size="100"></label></div>
+      <div><label>Email: <input type="text" name="email_field" size="100"></label></div>
+      <div>Gender:</div>
+      <div>
+        <label>Male <input type="radio" name="gender_field" value="male"></label>
+        <label>Female <input type="radio" name="gender_field" value="female"></label>
+      </div>
+      <div>Age:</div>
+      <div>
+        <select name="age_field">
+          <option>Under 18</option>
+          <option>Over 18</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+    <legend>My Availability</legend>
+    <h3>Days Available:</h3>
+      <div>
+        <div><label>Sunday <input type="checkbox" name="available_field[]" value="Sunday"></label></div>
+        <div><label>Monday <input type="checkbox" name="available_field[]" value="Monday"></label></div>
+        <div><label>Tuesday <input type="checkbox" name="available_field[]" value="Tuesday"></label></div>
+        <div><label>Wednesday <input type="checkbox" name="available_field[]" value="Wednesday"></label></div>
+        <div><label>Thursday <input type="checkbox" name="available_field[]" value="Thursday"></label></div>
+        <div><label>Friday <input type="checkbox" name="available_field[]" value="Friday"></label></div>
+        <div><label>Saturday <input type="checkbox" name="available_field[]" value="Saturday"></label></div>
+        <h3>Comments</h3>
+        <textarea name="comments_field"></textarea>
+      </div>
+    </fieldset>
+    <input type="hidden" name="hidden_field" value="Curtis McEwen">
+    <input type="submit" value="Submit Query">
+  </form>
+</body>
+</html>
